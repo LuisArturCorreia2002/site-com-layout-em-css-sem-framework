@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/*Estruturas do SITE*/
+.header{
+   padding: 30px;
+   text-align: center;
+   background-color: #fff;  
+   background-image: url(../img/Municipio.jpeg);
+}
+.header h1 h2{
+    font-size: 50px;
+}
+.nav{
+    overflow: hidden;
+    background-color: #333;
+}
+.nav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.nav .alinha-direita{
+    float: right;
+}
+.leftCol{
+    float: left;
+    width: 75%;
+}
+.fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.card{
+    background-color: #fff;
+   padding: 20px;
+   margin-top: 20px;
+}
+.rightCol{
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    mragin-top: 20px;
+    height: 100px;
+}
+.footer:hover{
+    background-color: #f4ff91;
+    color: #000;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.redesocial a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #151515;
+    display: block;
+}
+
+.redesocial a:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+@media screen and (max-width: 800px){
+    .leftCol, .rightCol{
+       width: 100%;
+       padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .nav a{
+        float: none;
+        width: 100%;
+    }
+}
